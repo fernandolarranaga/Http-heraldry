@@ -1,0 +1,18 @@
+
+<div class="contenedor">
+<p>blason-details works!</p>
+<a [routerLink]="['/blason']"> Back to list </a>
+<br><br>
+
+
+
+    <div class="card" style="width: 18rem;" *ngIf="blazon">
+      <img  [src]="blazon.img" heigth="200 px" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">{{ blazon.content}}&nbsp;</h5>
+        <p class="card-text">{{ blazon.date }}</p>
+       
+      </div>
+    </div>
+
+  </div>

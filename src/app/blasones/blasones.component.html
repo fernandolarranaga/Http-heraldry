@@ -1,0 +1,20 @@
+<app-form></app-form><br>
+<div class="container my-5">
+
+
+
+
+
+<div class="row">
+  <input type="text" placeholder="Pon aqui el linaje a buscar" (input)="search($event)">
+
+<div *ngFor="let blazons of heraldry" class="card"  class="col-xl-4 col-sm-6 col-xs-12">
+  <br>
+  <a routerLink="/blason/{{blazons.id}}">  <img [src]="blazons.img" class="card-img-top" class="rounded"  height="300 px"></a>
+  <div class="card-body">
+    <h5 class="card-title">{{ blazons.content }}&nbsp;</h5>
+    <h5 class="card-title">{{ blazons.date | slice:0:40 }}&nbsp;</h5>
+    
+</div>
+</div>
+</div>
