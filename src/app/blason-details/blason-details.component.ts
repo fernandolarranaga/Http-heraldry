@@ -31,11 +31,11 @@ export class BlasonDetailsComponent implements OnInit {
       })
   }
 
-  delete() {
+  eliminar() {
     if (window.confirm('Are you sure?')) {
       this.blason.deleteBlazon(this.blazon.id)
         .subscribe(() => {
-          this.router.navigate(['']);
+          this.router.navigate(['/']);
         });
     }
   }
