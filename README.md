@@ -1,8 +1,9 @@
 # AngularHeraldryProyect
 
+Proyecto en aángular con http realizando un crud, además de un buscador donde filtro lo que se busca.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
-Utilizo rutas angular y http para conectar con un archivo db online. Añado además un buscador.
 
 ## Development server
 
